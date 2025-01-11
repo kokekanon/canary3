@@ -79,6 +79,7 @@ Player::Player(std::shared_ptr<ProtocolGame> p) :
 	m_playerBadge = std::make_unique<PlayerBadge>(*this);
 	m_playerCyclopedia = std::make_unique<PlayerCyclopedia>(*this);
 	m_playerTitle = std::make_unique<PlayerTitle>(*this);
+	m_playerOTCR = std::make_unique<PlayerFeatureOTCR>(*this);
 }
 
 Player::~Player() {
@@ -11132,6 +11133,15 @@ std::unique_ptr<PlayerVIP> &Player::vip() {
 
 const std::unique_ptr<PlayerVIP> &Player::vip() const {
 	return m_playerVIP;
+}
+
+// feature OTCR
+std::unique_ptr<PlayerFeatureOTCR> &Player::otcr() {
+	return m_playerOTCR;
+}
+
+const std::unique_ptr<PlayerFeatureOTCR> &Player::otcr() const {
+	return m_playerOTCR;
 }
 
 // Cyclopedia

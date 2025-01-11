@@ -34,6 +34,7 @@ class PlayerBadge;
 class PlayerCyclopedia;
 class PlayerTitle;
 class PlayerVIP;
+class PlayerFeatureOTCR;
 class Spectators;
 class Account;
 class RewardChest;
@@ -1341,6 +1342,9 @@ public:
 	std::unique_ptr<PlayerVIP> &vip();
 	const std::unique_ptr<PlayerVIP> &vip() const;
 
+	std::unique_ptr<PlayerFeatureOTCR> &otcr();
+	const std::unique_ptr<PlayerFeatureOTCR> &otcr() const;
+
 	void sendLootMessage(const std::string &message) const;
 
 	std::shared_ptr<Container> getLootPouch();
@@ -1734,6 +1738,7 @@ private:
 	friend class PlayerCyclopedia;
 	friend class PlayerTitle;
 	friend class PlayerVIP;
+	friend class PlayerFeatureOTCR;
 
 	std::unique_ptr<PlayerWheel> m_wheelPlayer;
 	std::unique_ptr<PlayerAchievement> m_playerAchievement;
@@ -1741,6 +1746,7 @@ private:
 	std::unique_ptr<PlayerCyclopedia> m_playerCyclopedia;
 	std::unique_ptr<PlayerTitle> m_playerTitle;
 	std::unique_ptr<PlayerVIP> m_playerVIP;
+	std::unique_ptr<PlayerFeatureOTCR> m_playerOTCR;
 
 	std::mutex quickLootMutex;
 
