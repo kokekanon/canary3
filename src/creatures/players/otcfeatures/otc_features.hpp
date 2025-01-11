@@ -18,6 +18,7 @@ class NetworkMessage;
 class PlayerFeatureOTCR {
 public:
 	explicit PlayerFeatureOTCR(Player &player);
+
 private:
 	Player &m_player;
 };
