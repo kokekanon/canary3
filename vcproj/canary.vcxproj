@@ -50,6 +50,7 @@
     <ClInclude Include="..\src\creatures\players\cyclopedia\player_cyclopedia.hpp" />
     <ClInclude Include="..\src\creatures\players\cyclopedia\player_title.hpp" />
     <ClInclude Include="..\src\creatures\players\vip\player_vip.hpp" />
+    <ClInclude Include="..\src\creatures\players\otcfeatures\otc_features.hpp" />
     <ClInclude Include="..\src\creatures\players\wheel\player_wheel.hpp" />
     <ClInclude Include="..\src\creatures\players\wheel\wheel_definitions.hpp" />
     <ClInclude Include="..\src\database\database.hpp" />
@@ -266,6 +267,7 @@
     <ClCompile Include="..\src\creatures\players\cyclopedia\player_cyclopedia.cpp" />
     <ClCompile Include="..\src\creatures\players\cyclopedia\player_title.cpp" />
     <ClCompile Include="..\src\creatures\players\vip\player_vip.cpp" />
+    <ClCompile Include="..\src\creatures\players\otcfeatures\otc_features.cpp" />
     <ClCompile Include="..\src\creatures\players\wheel\player_wheel.cpp" />
     <ClCompile Include="..\src\database\database.cpp" />
     <ClCompile Include="..\src\database\databasemanager.cpp" />
